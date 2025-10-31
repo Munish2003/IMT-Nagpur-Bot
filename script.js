@@ -314,6 +314,7 @@ async function sendMessageToN8NLeft(message) {
         hideTypingIndicatorLeft();
         sendButtonLeft.disabled = false;
         chatInputLeft.disabled = false;
+        chatInputLeft.focus(); // <<-- FIX APPLIED HERE
 
         let botReply = '';
         
@@ -339,6 +340,7 @@ async function sendMessageToN8NLeft(message) {
         hideTypingIndicatorLeft();
         sendButtonLeft.disabled = false;
         chatInputLeft.disabled = false;
+        chatInputLeft.focus(); // <<-- FIX APPLIED HERE (for error case)
         
         await addMessageLeft(
             'Sorry, I\'m having trouble connecting. Please try again or contact us at contact@imtnagpur.ac.in or call +91-712-2805000.',
